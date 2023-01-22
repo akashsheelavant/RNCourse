@@ -1,11 +1,23 @@
-import { Text, SafeAreaView } from "react-native"
+import { Text, View, StyleSheet } from "react-native"
 
 function GameScreen() {
     return (
-        <SafeAreaView>
-            <Text>Game Screen!</Text>
-        </SafeAreaView>
+        <View style={styles.screen}>
+            <View>
+                <Text>Opponents Guess</Text>
+            </View>
+            <View>
+                <Text>Higher or lower</Text>
+            </View>
+        </View>
     )
 }
 
 export default GameScreen
+
+const styles = StyleSheet.create({
+    screen: {
+        flex: 1,
+        padding: 24
+    }
+})
