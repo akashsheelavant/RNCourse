@@ -60,6 +60,7 @@ function GameScreen({ userNumber, onGameOver }) {
     let content = (
         <>
             <Card>
+                <NumberContainer>{currentGuess}</NumberContainer>
                 <InstructionText style={styles.instructionText}>Higher or lower</InstructionText>
                 <View style={styles.buttonContainer}>
                     <View style={styles.buttonViewInnerContainer}>
